@@ -19,7 +19,7 @@ public class DiscardServer {
 		this.channelHandler = channelHandler;
 	}
 
-	public void run() throws InterruptedException {
+	public void run(Object o) throws InterruptedException {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
 		EventLoopGroup workGroup = new NioEventLoopGroup();
 		try {

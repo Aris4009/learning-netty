@@ -8,6 +8,6 @@ public class EchoServerRun {
 		if (args != null && args.length > 0) {
 			port = Integer.parseInt(args[0]);
 		}
-		new DiscardServer(port, new EchoServerHandler()).run();
+		new DiscardServer(port, new EchoServerHandler()).run(null);
 	}
 }

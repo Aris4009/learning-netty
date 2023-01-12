@@ -7,6 +7,6 @@ public class DiscardServerRun {
 		if (args != null && args.length > 0) {
 			port = Integer.parseInt(args[0]);
 		}
-		new DiscardServer(port, new DiscardServerHandler()).run();
+		new DiscardServer(port, new DiscardServerHandler()).run(null);
 	}
 }
